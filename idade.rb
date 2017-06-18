@@ -6,17 +6,12 @@ begin
     puts '','Iniciando cálculo de idade...',''
 
     data_valida = Date.parse(data_nascimento_informada)    
-    # puts data_valida
     dia = data_valida.day
-    # puts dia
     mes = data_valida.month
-    # puts mes
     ano = data_valida.year
-    # puts ano
 
     idade = Time.now.year - ano
 
-    # puts Time.now.month - mes 
     if Time.now.month - mes < 0 
         idade -= 1
     else
