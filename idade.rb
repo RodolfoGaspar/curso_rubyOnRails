@@ -23,7 +23,7 @@ begin
 
     puts "Você tem #{idade} #{idade == 1 ? 'ano':'anos'}",'','Fim',''
 rescue => exception
-    puts 'Data informada (' + data_nascimento_informada + ') é inválida!'
+    puts "Data informada #{data_nascimento_informada} inválida!"
 else
     
 end
